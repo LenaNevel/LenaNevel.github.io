@@ -40,6 +40,8 @@
         <div class="container">
             <div class="header-content">
                 <h1 class="logo">Olena Nevel</h1>
+                
+                <!-- Desktop Navigation -->
                 <nav class="nav">
                     <a href="#experience">Experience</a>
                     <a href="#case-studies">Case Studies</a>
@@ -49,6 +51,27 @@
                     <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
                         <i class="fas fa-moon"></i>
                     </button>
+                </nav>
+                
+                <!-- Mobile Navigation -->
+                <div class="mobile-nav">
+                    <button class="theme-toggle" id="mobileThemeToggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu Dropdown -->
+                <nav class="mobile-menu" id="mobileMenu">
+                    <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+                    <a href="#case-studies" onclick="closeMobileMenu()">Case Studies</a>
+                    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+                    <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+                    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
                 </nav>
             </div>
         </div>

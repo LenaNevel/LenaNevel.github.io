@@ -3,6 +3,7 @@
 
 import { themeManager } from './theme-manager.js';
 import { navigationManager } from './navigation-manager.js';
+import { mobileNavigationManager } from './mobile-navigation.js';
 import { animationManager } from './animation-manager.js';
 import { uiInteractionsManager } from './ui-interactions.js';
 import { FormHandler } from './form-handler.js';
@@ -52,6 +53,7 @@ class App {
             // Core UI functionality first
             themeManager.init();
             navigationManager.init();
+            mobileNavigationManager.init();
             
             // Visual enhancements
             animationManager.init();

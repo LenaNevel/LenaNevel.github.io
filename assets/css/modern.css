@@ -11,14 +11,14 @@
     --secondary-dark: #1e4777;  /* TODO: Update to use global colors */
     
     --bg-light: var(--color-bg-primary);
-    --bg-dark: var(--color-bg-primary);
+    --bg-dark: #0d1117;  /* Explicit dark background */
     --text-light: var(--color-text-primary);
-    --text-dark: var(--color-text-primary);
+    --text-dark: #f0f6fc;  /* Explicit light text on dark */
     --text-muted: var(--color-text-muted);
     --border-light: var(--color-border-light);
-    --border-dark: var(--color-border-light);
+    --border-dark: #30363d;  /* Explicit dark border */
     --card-bg-light: var(--color-bg-tertiary);
-    --card-bg-dark: var(--color-bg-tertiary);
+    --card-bg-dark: #21262d;  /* Explicit dark card background */
     
     /* Typography */
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -146,6 +146,95 @@ body.dark-mode .theme-toggle {
 
 body.dark-mode .theme-toggle:hover {
     background: var(--card-bg-dark);
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    display: none;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.mobile-menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    gap: 4px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-line {
+    width: 24px;
+    height: 2px;
+    background: var(--color-text-primary);
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+body.dark-mode .hamburger-line {
+    background: var(--color-text-primary);
+}
+
+/* Hamburger animation when active */
+.mobile-menu-toggle.active .hamburger-line:first-child {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active .hamburger-line:third-child {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-bg-primary);
+    border-top: 1px solid var(--color-border-light);
+    padding: var(--space-md) 0;
+    flex-direction: column;
+    gap: 0;
+    box-shadow: var(--shadow-lg);
+    animation: slideDown 0.3s ease;
+}
+
+body.dark-mode .mobile-menu {
+    background: var(--color-bg-primary);
+    border-top-color: var(--color-border-light);
+}
+
+.mobile-menu.active {
+    display: flex;
+}
+
+.mobile-menu a {
+    padding: var(--space-sm) var(--space-md);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid var(--color-border-light);
+    transition: all 0.3s ease;
+}
+
+.mobile-menu a:hover {
+    background: var(--color-bg-secondary);
+    color: var(--color-primary);
+    padding-left: calc(var(--space-md) + var(--space-xs));
+}
+
+.mobile-menu a:last-child {
+    border-bottom: none;
 }
 
 /* Hero Section */
@@ -1642,7 +1731,18 @@ body.dark-mode .github-calendar {
 }
 
 /* Responsive Design */
+/* Mobile Navigation Responsive Rules */
 @media (max-width: 768px) {
+    /* Hide desktop navigation */
+    .nav {
+        display: none;
+    }
+    
+    /* Show mobile navigation */
+    .mobile-nav {
+        display: flex;
+    }
+    
     .hero-title {
         font-size: var(--font-size-3xl);
     }
