@@ -23,6 +23,7 @@
     <meta name="twitter:image" content="https://lenanevel.github.io/images/og-preview.png" />
     
     <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/globals.css" />
     <link rel="stylesheet" href="assets/css/modern.css" />
     
     <!-- Fonts -->
@@ -628,8 +629,8 @@ class TaskResponse(BaseModel):
                         </div>
                     </div>
                     <div class="code-sample-footer">
-                        <a href="https://github.com/LenaNevel/Trackly-App/blob/main/backend/models/task.py" target="_blank" class="btn btn-small btn-secondary">
-                            <i class="fab fa-github"></i> View Full File
+                        <a href="https://github.com/LenaNevel/Trackly-App/tree/main/backend" target="_blank" class="btn btn-small btn-secondary">
+                            <i class="fab fa-github"></i> View Backend Code
                         </a>
                     </div>
                 </div>
@@ -895,7 +896,8 @@ class TaskResponse(BaseModel):
 
     <!-- Scripts -->
     <script src="assets/js/human-verification-context.js"></script>
-    <script src="assets/js/modern.js"></script>
+    <script type="module" src="assets/js/modules/app.js"></script>
+    <script type="module" src="assets/js/global-exports.js"></script>
     
     <!-- Initialize GitHub Calendar -->
     <script>

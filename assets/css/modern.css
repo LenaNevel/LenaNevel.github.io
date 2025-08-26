@@ -1,50 +1,27 @@
 /* Modern Portfolio CSS - Olena Nevel */
+/* All colors and variables are defined in globals.css */
+
 :root {
-    /* Colors - keeping the teal + coral palette */
-    --primary: #008080;
-    --primary-dark: #006666;
-    --accent: #ff6b6b;
-    --accent-dark: #e65a5a;
-    --secondary: #2c5aa0;
-    --secondary-dark: #1e4777;
+    /* Legacy aliases for backward compatibility - gradually remove these */
+    --primary: var(--color-primary);
+    --primary-dark: var(--color-primary-hover);
+    --accent: var(--color-secondary);
+    --accent-dark: var(--color-secondary-hover);
+    --secondary: #2c5aa0;  /* TODO: Update to use global colors */
+    --secondary-dark: #1e4777;  /* TODO: Update to use global colors */
     
-    /* Dark mode colors */
-    --bg-light: #ffffff;
-    --bg-dark: #0d1117;
-    --text-light: #1a1a1a;
-    --text-dark: #f0f6fc;
-    --text-muted: #6b7280;
-    --border-light: #e5e7eb;
-    --border-dark: #30363d;
-    --card-bg-light: #f9fafb;
-    --card-bg-dark: #161b22;
+    --bg-light: var(--color-bg-primary);
+    --bg-dark: var(--color-bg-primary);
+    --text-light: var(--color-text-primary);
+    --text-dark: var(--color-text-primary);
+    --text-muted: var(--color-text-muted);
+    --border-light: var(--color-border-light);
+    --border-dark: var(--color-border-light);
+    --card-bg-light: var(--color-bg-tertiary);
+    --card-bg-dark: var(--color-bg-tertiary);
     
     /* Typography */
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --font-size-xs: 0.75rem;
-    --font-size-sm: 0.875rem;
-    --font-size-base: 1rem;
-    --font-size-lg: 1.125rem;
-    --font-size-xl: 1.25rem;
-    --font-size-2xl: 1.5rem;
-    --font-size-3xl: 1.875rem;
-    --font-size-4xl: 2.25rem;
-    
-    /* Spacing */
-    --space-xs: 0.5rem;
-    --space-sm: 1rem;
-    --space-md: 1.5rem;
-    --space-lg: 2rem;
-    --space-xl: 3rem;
-    --space-2xl: 4rem;
-    
-    /* Borders & Shadows */
-    --radius: 8px;
-    --radius-lg: 12px;
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 /* Base Styles */
