@@ -786,12 +786,14 @@ class TaskResponse(BaseModel):
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p>Direct contact for opportunities</p>
-                            <div class="cta-row">
-                                <button id="revealEmail" class="btn btn-small btn-primary">Email Me</button>
-                                <button id="copyEmail" class="btn btn-small btn-secondary">Copy Email</button>
+                            <div id="showReveal">
+                                <p>Direct contact for opportunities</p>
+                                <button class="btn btn-small btn-accent" onclick="revealEmail()">Reveal Email</button>
                             </div>
-                            <span id="emailStatus" class="muted" aria-live="polite"></span>
+                            <div id="showCopy" style="display: none;">
+                                <p>lenanevel1@gmail.com</p>
+                                <button class="btn btn-small btn-primary" onclick="copyEmail()"><i class="fas fa-copy"></i> Copy Email</button>
+                            </div>
                         </div>
                     </div>
                     

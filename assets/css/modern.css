@@ -1861,13 +1861,16 @@ body.dark-mode .github-calendar {
     
     .cta-row { 
         display: flex; 
-        flex-direction: column; 
         gap: 0.5rem; 
     }
     
     .cta-row .btn { 
-        width: 100%; 
+        flex: 1;
         text-align: center; 
+    }
+    
+    .contact-methods {
+        grid-template-columns: 1fr;
     }
     
     .badge { 
@@ -1891,6 +1894,16 @@ body.dark-mode .github-calendar {
     
     .case-study, .project-card { 
         padding: 0.9rem; 
+    }
+    
+    .case-studies-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .case-study.featured {
+        grid-column: 1;
+        grid-row: auto;
     }
 }
     
@@ -1922,9 +1935,6 @@ body.dark-mode .github-calendar {
         grid-template-columns: 1fr;
     }
     
-    .contact-methods {
-        grid-template-columns: 1fr;
-    }
     
     .hero-ctas {
         flex-direction: column;
@@ -1944,15 +1954,6 @@ body.dark-mode .github-calendar {
         font-size: var(--font-size-sm);
     }
     
-    .case-studies-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-    
-    .case-study.featured {
-        grid-column: 1;
-        grid-row: auto;
-    }
     
     .case-study-metrics {
         gap: var(--space-sm);

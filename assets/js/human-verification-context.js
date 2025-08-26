@@ -122,7 +122,13 @@ const HumanVerificationContext = (function() {
     }
     
     function actuallyRevealEmail() {
-        toggleEmailDisplay(true);
+        const showReveal = document.getElementById('showReveal');
+        const showCopySection = document.getElementById('showCopy');
+        
+        if (showReveal && showCopySection) {
+            showReveal.style.display = 'none';
+            showCopySection.style.display = 'block';
+        }
         showToast('Email revealed! Click to copy 📧');
     }
     
@@ -155,11 +161,30 @@ const HumanVerificationContext = (function() {
 document.addEventListener('DOMContentLoaded', function() {
     HumanVerificationContext.init();
     
-    // Initialize protected email functionality
-    initProtectedEmail();
+    // Check if already verified and update email section
+    setTimeout(() => {
+        if (HumanVerificationContext.checkHuman()) {
+            toggleEmailDisplay(true);
+        }
+    }, 100);
     
     // Load recent GitHub activity
     loadRecentActivity();
+    
+    function toggleEmailDisplay(showCopy) {
+        const showReveal = document.getElementById('showReveal');
+        const showCopySection = document.getElementById('showCopy');
+        
+        if (showReveal && showCopySection) {
+            if (showCopy) {
+                showReveal.style.display = 'none';
+                showCopySection.style.display = 'block';
+            } else {
+                showReveal.style.display = 'block';
+                showCopySection.style.display = 'none';
+            }
+        }
+    }
 });
 
 // Protected email system - no email in DOM until user interacts
