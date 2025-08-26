@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olena Nevel - Senior Software Engineer (Full-Stack)</title>
+    <title>Olena Nevel — Senior Software Engineer</title>
     
     <!-- SEO & Social -->
     <meta name="description" content="Senior Software Engineer with 5+ years building full-stack products in health-tech. Ships complex integrations (Stripe, Twilio, TriZetto) with product-minded execution. Currently building Trackly." />
@@ -33,6 +33,22 @@
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Person",
+      "name":"Olena Nevel",
+      "alternateName": ["Lena Nevel","Yelena Nevel"],
+      "sameAs":[
+        "https://github.com/LenaNevel",
+        "https://www.linkedin.com/in/yelena-nevel/"
+      ],
+      "jobTitle":"Senior Software Engineer",
+      "url":"https://lenanevel.github.io/"
+    }
+    </script>
 </head>
 <body class="light-mode">
     <!-- Header -->
@@ -49,14 +65,14 @@
                     <a href="#skills">Skills</a>
                     <a href="#contact">Contact</a>
                     <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                        <i class="fas fa-moon"></i>
+                        <i class="far fa-moon"></i>
                     </button>
                 </nav>
                 
                 <!-- Mobile Navigation -->
                 <div class="mobile-nav">
                     <button class="theme-toggle" id="mobileThemeToggle" aria-label="Toggle dark mode">
-                        <i class="fas fa-moon"></i>
+                        <i class="far fa-moon"></i>
                     </button>
                     <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
                         <span class="hamburger-line"></span>
@@ -81,8 +97,9 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Senior Software Engineer</h1>
-                <h2 class="hero-subtitle">Full-Stack Developer & Product Thinker</h2>
+                <h1 class="hero-title">Olena Nevel</h1>
+                <p class="hero-alias" aria-label="aliases">Also known as: Lena</p>
+                <h2 class="hero-subtitle">Senior Software Engineer · Full-Stack Developer & Product Thinker</h2>
                 <p class="hero-description">
                     I <strong>deliver more shipped projects than any other engineer on my team</strong>. 
                     Expert in complex integrations (Stripe, Twilio, TriZetto) with product-minded execution. 
@@ -278,6 +295,7 @@
                 <article class="case-study featured">
                     <div class="case-study-header">
                         <h3>Trackly — Personal Issue Tracker</h3>
+                        <p><span class="badge">Live Demo: coming soon</span></p>
                         <div class="case-study-tags">
                             <span class="tag">Product Thinking</span>
                             <span class="tag">Full-Stack</span>
@@ -516,6 +534,7 @@
                     <div class="project-header">
                         <h3>Trackly — Personal Issue Tracker</h3>
                         <p class="project-tagline">Lightweight, product-minded issue tracking for solo devs and small teams</p>
+                        <p><span class="badge">Live Demo: coming soon</span></p>
                     </div>
                     
                     <div class="project-content">
@@ -652,7 +671,7 @@ class TaskResponse(BaseModel):
                         </div>
                     </div>
                     <div class="code-sample-footer">
-                        <a href="https://github.com/LenaNevel/Trackly-App/tree/main/backend" target="_blank" class="btn btn-small btn-secondary">
+                        <a href="https://github.com/LenaNevel/Trackly-App/tree/main/backend" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-secondary">
                             <i class="fab fa-github"></i> View Backend Code
                         </a>
                     </div>
@@ -661,23 +680,19 @@ class TaskResponse(BaseModel):
         </div>
     </section>
 
-    <!-- GitHub Activity -->
-    <section id="github-activity" class="section section-dark">
+    <!-- Recent Activity -->
+    <section id="activity" class="section section-dark">
         <div class="container">
-            <h2 class="section-title">GitHub Activity</h2>
-            <p class="section-subtitle">Consistent, real-world coding activity</p>
+            <h2 class="section-title">Recent Activity</h2>
+            <p class="section-subtitle">Latest public commits (private work not shown)</p>
             
-            <div class="github-activity-container">
-                <div class="github-calendar-wrapper">
-                    <div class="github-calendar" aria-label="GitHub contributions calendar for LenaNevel"></div>
-                </div>
-                <noscript>
-                    <p class="github-fallback">
-                        View activity on <a href="https://github.com/LenaNevel" target="_blank" rel="noopener noreferrer">github.com/LenaNevel</a>
-                    </p>
-                </noscript>
-                
-                <p class="github-note"><a href="https://github.com/LenaNevel" target="_blank" rel="noopener noreferrer">View Full GitHub Profile</a></p>
+            <div class="activity-container">
+                <ul id="activity-list" class="activity-list">
+                    <li>Loading recent commits...</li>
+                </ul>
+                <p class="activity-note">
+                    <a href="https://github.com/LenaNevel" target="_blank" rel="noopener noreferrer">View Full GitHub Profile</a>
+                </p>
             </div>
         </div>
     </section>
@@ -771,14 +786,12 @@ class TaskResponse(BaseModel):
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <div id="showReveal">
-                                <p>Direct contact for opportunities</p>
-                                <button class="btn btn-small btn-accent" onclick="revealEmail()">Reveal Email</button>
+                            <p>Direct contact for opportunities</p>
+                            <div class="cta-row">
+                                <button id="revealEmail" class="btn btn-small btn-primary">Email Me</button>
+                                <button id="copyEmail" class="btn btn-small btn-secondary">Copy Email</button>
                             </div>
-                            <div id="showCopy" style="display: none;">
-                                <p>lenanevel1@gmail.com</p>
-                                <button class="btn btn-small btn-primary" onclick="copyEmail()"><i class="fas fa-copy"></i> Copy Email</button>
-                            </div>
+                            <span id="emailStatus" class="muted" aria-live="polite"></span>
                         </div>
                     </div>
                     
@@ -815,7 +828,7 @@ class TaskResponse(BaseModel):
                             <h3>Quick Message</h3>
                             <button class="close-form" onclick="toggleQuickForm()">×</button>
                         </div>
-                        <form action="mailto:lenanevel1@gmail.com" method="post" enctype="text/plain" onsubmit="return validateHumanCheck()">
+                        <form id="contactForm" method="post" enctype="text/plain" onsubmit="return validateHumanCheck()">
                             <div class="form-group">
                                 <label for="senderName">Your Name</label>
                                 <input type="text" id="senderName" name="name" required>

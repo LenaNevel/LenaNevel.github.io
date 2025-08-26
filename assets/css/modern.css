@@ -255,6 +255,14 @@ body.dark-mode .hero-title {
     color: var(--text-dark);
 }
 
+.hero-alias {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    text-align: center;
+    margin-bottom: var(--space-sm);
+    font-style: italic;
+}
+
 .hero-subtitle {
     font-size: var(--font-size-xl);
     color: var(--primary);
@@ -1270,6 +1278,103 @@ body.dark-mode .contact-method h4 {
     font-size: var(--font-size-sm);
 }
 
+/* Email CTA Row */
+.cta-row {
+    display: flex;
+    gap: var(--space-xs);
+    margin-top: var(--space-xs);
+}
+
+.cta-row .btn {
+    flex: 1;
+}
+
+#emailStatus {
+    display: block;
+    margin-top: var(--space-xs);
+    font-size: var(--font-size-xs);
+    color: var(--color-success);
+}
+
+.muted {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+}
+
+/* Recent Activity Section */
+.activity-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: var(--color-bg-tertiary);
+    border-radius: var(--radius);
+    padding: var(--space-lg);
+}
+
+body.dark-mode .activity-list {
+    background: var(--color-bg-tertiary);
+}
+
+.activity-list li {
+    margin: var(--space-sm) 0;
+    padding: var(--space-sm);
+    border-bottom: 1px solid var(--color-border-light);
+    line-height: 1.5;
+}
+
+.activity-list li:last-child {
+    border-bottom: none;
+}
+
+.activity-list a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.activity-list a:hover {
+    text-decoration: underline;
+}
+
+.activity-list .muted {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+}
+
+.activity-note {
+    text-align: center;
+    margin-top: var(--space-lg);
+}
+
+.activity-note a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.activity-note a:hover {
+    text-decoration: underline;
+}
+
+
+/* Status Badge */
+.badge {
+    display: inline-block;
+    background: var(--color-accent);
+    color: var(--color-text-inverse);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 .resume-download {
     text-align: center;
     padding: var(--space-xl);
@@ -1746,6 +1851,48 @@ body.dark-mode .github-calendar {
     .hero-title {
         font-size: var(--font-size-3xl);
     }
+}
+
+/* Mobile-first polish */
+@media (max-width: 640px) {
+    .header .nav a { 
+        padding: 0.5rem 0.25rem; 
+    }
+    
+    .cta-row { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 0.5rem; 
+    }
+    
+    .cta-row .btn { 
+        width: 100%; 
+        text-align: center; 
+    }
+    
+    .badge { 
+        display: inline-block; 
+        margin-top: 0.25rem; 
+    }
+    
+    
+    .container { 
+        padding: 0 1rem; 
+    }
+    
+    h1 { 
+        font-size: 1.6rem; 
+        line-height: 1.2; 
+    }
+    
+    h2 { 
+        font-size: 1.2rem; 
+    }
+    
+    .case-study, .project-card { 
+        padding: 0.9rem; 
+    }
+}
     
     .hero-subtitle {
         font-size: var(--font-size-lg);

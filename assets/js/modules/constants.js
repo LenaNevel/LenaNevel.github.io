@@ -12,8 +12,8 @@ export const APP_CONFIG = {
             DARK_MODE: 'dark-mode'
         },
         ICONS: {
-            LIGHT: 'fas fa-sun',    // Icon shown in dark mode (toggles to light)
-            DARK: 'fas fa-moon'     // Icon shown in light mode (toggles to dark)
+            LIGHT: 'far fa-sun',        // Icon shown in dark mode (toggles to light) - clearer sun icon
+            DARK: 'far fa-moon'         // Icon shown in light mode (toggles to dark) - using regular moon for clarity
         }
     },
     
