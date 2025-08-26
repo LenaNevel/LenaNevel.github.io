@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Olena Nevel - Senior Software Engineer Resume</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background: white; 
+            color: #333;
+            line-height: 1.4;
+            font-size: 11pt;
+        }
+        .header { 
+            text-align: center; 
+            border-bottom: 2px solid #2c5aa0; 
+            padding-bottom: 20px; 
+            margin-bottom: 25px; 
+        }
+        .header h1 { 
+            margin: 0; 
+            font-size: 24pt; 
+            color: #2c5aa0;
+            font-weight: bold;
+        }
+        .header .title { 
+            font-size: 14pt; 
+            color: #666; 
+            margin: 5px 0;
+        }
+        .contact { 
+            font-size: 10pt; 
+            margin-top: 10px; 
+        }
+        .section { 
+            margin-bottom: 25px; 
+        }
+        .section h2 { 
+            color: #2c5aa0; 
+            font-size: 14pt; 
+            border-bottom: 1px solid #ddd; 
+            padding-bottom: 5px; 
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+        .job { 
+            margin-bottom: 20px; 
+        }
+        .job-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+        .job-title { 
+            font-weight: bold; 
+            font-size: 12pt; 
+        }
+        .job-dates { 
+            font-style: italic; 
+            color: #666;
+            font-size: 10pt;
+        }
+        .company { 
+            color: #2c5aa0; 
+            font-weight: bold;
+        }
+        .job ul { 
+            margin: 8px 0 0 0; 
+            padding-left: 20px; 
+        }
+        .job li { 
+            margin-bottom: 4px; 
+        }
+        .skills-grid { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 10px; 
+        }
+        .skill-category { 
+            font-weight: bold; 
+        }
+        .project { 
+            margin-bottom: 15px; 
+        }
+        .project-title { 
+            font-weight: bold; 
+            color: #2c5aa0; 
+        }
+        .summary { 
+            font-size: 11pt; 
+            line-height: 1.5; 
+        }
+        @media print {
+            @page {
+                margin: 0.75in;
+                size: letter;
+            }
+            body { 
+                margin: 0; 
+                padding: 0; 
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .section { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Olena Nevel</h1>
+        <div class="title">Senior Software Engineer (Full-Stack)</div>
+        <div class="contact">
+            Email: <a href="mailto:lenanevel1@gmail.com">lenanevel1@gmail.com</a> • 
+            <a href="https://www.linkedin.com/in/yelena-nevel" target="_blank">LinkedIn</a> • 
+            <a href="https://github.com/LenaNevel" target="_blank">GitHub</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Professional Summary</h2>
+        <div class="summary">
+            Senior Software Engineer with 5+ years building full-stack products in healthcare technology. Known for fast, reliable delivery on complex integrations (Stripe, Twilio, TriZetto), pragmatic product thinking (PRDs, backlog shaping), and cross-team leadership. Consistently rated "Exceeds Expectations." Expert at shipping the right thing, not just shipping code. Recently promoted to Senior (P3) for high-impact delivery across claims, payments, VOIP, and multi-location workflows.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Featured Project</h2>
+        <div class="project">
+            <div class="project-title">Trackly — Personal Issue Tracker (Full-Stack)</div>
+            <p>A lightweight issue tracker designed for solo developers and small teams, emphasizing speed and clarity with modal-based task creation and PRD-friendly task fields.</p>
+            <ul>
+                <li><strong>Frontend:</strong> Next.js with plain CSS, sticky header, reusable layout components</li>
+                <li><strong>Backend:</strong> Flask (transitioning to Django), Pydantic for I/O validation</li>
+                <li><strong>Features:</strong> Authentication, task CRUD, notes, due dates, Kanban board, double-click task creation</li>
+                <li><strong>Product:</strong> Authored PRDs, roadmap planning, soft-launch strategy for Reddit/Product Hunt/HN</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Senior Software Engineer (P3)</div>
+                    <div class="company">Barti (Remote)</div>
+                </div>
+                <div class="job-dates">2025–Present</div>
+            </div>
+            <ul>
+                <li>Promoted from P2 to Senior (P3); rated "Exceeds Expectations"</li>
+                <li>Shipped: Insurance & ID scanning, Multi-location Services & Inventory, VOIP voicemail/transfer systems — reduced manual processing by 60%</li>
+                <li>Authored new PRD format adopted company-wide — improved product/engineering alignment by 40%</li>
+                <li>Achieved highest delivery velocity on team; mentored 3 junior engineers; initiated Barti Book Club (15+ participants)</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Software Engineer</div>
+                    <div class="company">Barti (Remote)</div>
+                </div>
+                <div class="job-dates">2023–2025</div>
+            </div>
+            <ul>
+                <li>Delivered 10+ core features including TriZetto claims (processing 500+ claims/day), VoIP message center, intake automation</li>
+                <li>Implemented Stripe payments end-to-end in 2 weeks — cut payment setup time by 80%; delivered Caller ID, Imaging, Elavon terminal</li>
+                <li>Reduced backlog timelines by 3-4 weeks per sprint through proactive dependency management</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Full-Stack Engineer</div>
+                    <div class="company">Health Note (Remote)</div>
+                </div>
+                <div class="job-dates">2021–2023</div>
+            </div>
+            <ul>
+                <li>Built Clinical Builder used by 100+ healthcare providers weekly for note pattern analysis</li>
+                <li>Delivered configurable Screener module processing 1000+ patient assessments monthly; dynamic PDF generation</li>
+                <li>Owned end-to-end delivery of ambiguous projects; turned ideas into shipped features</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Data Scientist</div>
+                    <div class="company">Health Note (Remote)</div>
+                </div>
+                <div class="job-dates">2020–2021</div>
+            </div>
+            <ul>
+                <li>Built analytics dashboard processing 50K+ daily events using MongoDB, AWS Lambda, Python/Node.js</li>
+                <li>Managed ETL pipelines to Redshift handling 10M+ records; operated Superset serving 25+ stakeholders</li>
+                <li>Delivered weekly product insights to C-suite — influenced $2M+ in strategic decisions</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Country Manager</div>
+                    <div class="company">Indeed</div>
+                </div>
+                <div class="job-dates">2018–2020</div>
+            </div>
+            <ul>
+                <li>Led SEO/SEM strategies, localization, analytics, and growth initiatives</li>
+                <li>Cross-functional leadership and data-driven decision making</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div><span class="skill-category">Frontend:</span> React, Next.js, HTML/CSS, JavaScript, UX design principles</div>
+            <div><span class="skill-category">Backend:</span> Python, Flask, Django, Node.js, SQLAlchemy, REST APIs</div>
+            <div><span class="skill-category">Cloud/Database:</span> AWS Lambda, MongoDB, PostgreSQL, Redshift</div>
+            <div><span class="skill-category">Integrations:</span> Stripe, Twilio, Dosespot, TriZetto (healthcare claims)</div>
+            <div><span class="skill-category">Product:</span> PRD authoring, backlog prioritization, cross-team leadership</div>
+            <div><span class="skill-category">Leadership:</span> Mentoring, team collaboration, stakeholder communication</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Additional Background</h2>
+        <p>Research Specialist (MATLAB/FORTRAN modeling, data analysis); esthetics & client services — sharpened precision, stakeholder communication, and customer care. Multidisciplinary foundation spanning university research, data science, and content management.</p>
+    </div>
+
+    <script>
+        // Function to trigger print dialog for PDF generation
+        function printToPDF() {
+            window.print();
+        }
+        
+        // If accessed with ?print=true, auto-trigger print dialog
+        if (window.location.search.includes('print=true')) {
+            setTimeout(printToPDF, 500);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#008080;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#006666;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e65a5a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="secondaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c5aa0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e4777;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Drop shadow filter -->
+    <filter id="dropshadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f9fafb"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#1a1a1a">
+    Trackly Architecture
+  </text>
+  <text x="400" y="65" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#6b7280">
+    Lightweight, Product-Minded Issue Tracking
+  </text>
+  
+  <!-- Frontend Layer -->
+  <rect x="50" y="120" width="200" height="120" rx="12" fill="url(#primaryGradient)" filter="url(#dropshadow)"/>
+  <text x="150" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="white">
+    Frontend
+  </text>
+  <text x="150" y="165" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="white" opacity="0.9">
+    Next.js + Plain CSS
+  </text>
+  
+  <!-- Frontend Components -->
+  <rect x="70" y="180" width="70" height="25" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="105" y="196" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="white">
+    Kanban Board
+  </text>
+  
+  <rect x="150" y="180" width="70" height="25" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="185" y="196" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="white">
+    Task Modals
+  </text>
+  
+  <rect x="70" y="210" width="70" height="25" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="105" y="226" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="white">
+    Auth Forms
+  </text>
+  
+  <rect x="150" y="210" width="70" height="25" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="185" y="226" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="white">
+    Navigation
+  </text>
+  
+  <!-- API Layer -->
+  <rect x="300" y="120" width="200" height="120" rx="12" fill="url(#accentGradient)" filter="url(#dropshadow)"/>
+  <text x="400" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="white">
+    API Layer
+  </text>
+  <text x="400" y="165" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="white" opacity="0.9">
+    Flask → Django Migration
+  </text>
+  
+  <!-- API Components -->
+  <rect x="320" y="180" width="70" height="25" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="355" y="196" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="white">
+    REST Endpoints
+  </text>
+  
+  <rect x="400" y="180" width="70" height="25" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="435" y="196" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="white">
+    Pydantic I/O
+  </text>
+  
+  <rect x="320" y="210" width="70" height="25" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="355" y="226" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="white">
+    Authentication
+  </text>
+  
+  <rect x="400" y="210" width="70" height="25" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="435" y="226" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="white">
+    Business Logic
+  </text>
+  
+  <!-- Database Layer -->
+  <rect x="550" y="120" width="200" height="120" rx="12" fill="url(#secondaryGradient)" filter="url(#dropshadow)"/>
+  <text x="650" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="white">
+    Database
+  </text>
+  <text x="650" y="165" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="white" opacity="0.9">
+    SQLAlchemy ORM
+  </text>
+  
+  <!-- Database Tables -->
+  <rect x="570" y="180" width="60" height="25" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="600" y="196" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="white">
+    Users
+  </text>
+  
+  <rect x="640" y="180" width="60" height="25" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="670" y="196" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="white">
+    Tasks
+  </text>
+  
+  <rect x="710" y="180" width="60" height="25" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="740" y="196" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="white">
+    Projects
+  </text>
+  
+  <rect x="605" y="210" width="60" height="25" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="635" y="226" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="white">
+    Comments
+  </text>
+  
+  <rect x="675" y="210" width="60" height="25" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="705" y="226" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="white">
+    Sessions
+  </text>
+  
+  <!-- Connection Arrows -->
+  <!-- Frontend to API -->
+  <path d="M250 180 L300 180" stroke="#008080" stroke-width="3" marker-end="url(#arrowhead)" fill="none"/>
+  <text x="275" y="175" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#008080" font-weight="500">
+    HTTP/JSON
+  </text>
+  
+  <!-- API to Database -->
+  <path d="M500 180 L550 180" stroke="#ff6b6b" stroke-width="3" marker-end="url(#arrowhead)" fill="none"/>
+  <text x="525" y="175" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#ff6b6b" font-weight="500">
+    SQL
+  </text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#008080"/>
+    </marker>
+  </defs>
+  
+  <!-- Key Features Section -->
+  <rect x="50" y="280" width="700" height="140" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1" filter="url(#dropshadow)"/>
+  <text x="70" y="305" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#1a1a1a">
+    Key Product Features
+  </text>
+  
+  <!-- Feature Grid -->
+  <rect x="70" y="320" width="140" height="80" rx="8" fill="#f0f9ff" stroke="#008080" stroke-width="1"/>
+  <text x="140" y="340" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#008080">
+    PRD-Style Tasks
+  </text>
+  <text x="75" y="355" font-family="Inter, sans-serif" font-size="10" fill="#6b7280">
+    • Why/What/How fields
+  </text>
+  <text x="75" y="370" font-family="Inter, sans-serif" font-size="10" fill="#6b7280">
+    • Acceptance criteria
+  </text>
+  <text x="75" y="385" font-family="Inter, sans-serif" font-size="10" fill="#6b7280">
+    • Won't-Do rationale
+  </text>
+  
+  <rect x="230" y="320" width="140" height="80" rx="8" fill="#fdf2f8" stroke="#ff6b6b" stroke-width="1"/>
+  <text x="300" y="340" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#ff6b6b">
+    Speed Optimized
+  </text>
+  <text x="235" y="355" font-family="Inter, sans-serif" font-size="10" fill="#6b7280">
+    • Double-click create
+  </text>
+  <text x="235" y="370" font-family="Inter, sans-serif" font-size="10" fill="#6b7280">
+    • Modal workflows
+  </text>
+  <text x="235" y="385" font-family="Inter, sans-serif" font-size="10" fill="#6b7280">
+    • Drag & drop Kanban
+  </text>
+  
+  <rect x="390" y="320" width="140" height="80" rx="8" fill="#eff6ff" stroke="#2c5aa0" stroke-width="1"/>
+  <text x="460" y="340" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#2c5aa0">
+    Developer First
+  </text>
+  <text x="395" y="355" font-family="Inter, sans-serif" font-size="10" fill="#6b7280">
+    • Clean, minimal UI
+  </text>
+  <text x="395" y="370" font-family="Inter, sans-serif" font-size="10" fill="#6b7280">
+    • Keyboard shortcuts
+  </text>
+  <text x="395" y="385" font-family="Inter, sans-serif" font-size="10" fill="#6b7280">
+    • No bloat features
+  </text>
+  
+  <rect x="550" y="320" width="140" height="80" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+  <text x="620" y="340" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#16a34a">
+    Production Ready
+  </text>
+  <text x="555" y="355" font-family="Inter, sans-serif" font-size="10" fill="#6b7280">
+    • Type-safe APIs
+  </text>
+  <text x="555" y="370" font-family="Inter, sans-serif" font-size="10" fill="#6b7280">
+    • Authentication
+  </text>
+  <text x="555" y="385" font-family="Inter, sans-serif" font-size="10" fill="#6b7280">
+    • Error handling
+  </text>
+  
+  <!-- Migration Note -->
+  <rect x="50" y="450" width="700" height="100" rx="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="1" filter="url(#dropshadow)"/>
+  <text x="70" y="475" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#92400e">
+    ⚡ Architectural Evolution: Flask → Django
+  </text>
+  <text x="70" y="495" font-family="Inter, sans-serif" font-size="12" fill="#92400e">
+    <tspan font-weight="600">Why Django?</tspan> Better ORM relationships, built-in admin interface, and mature ecosystem for scaling.
+  </text>
+  <text x="70" y="510" font-family="Inter, sans-serif" font-size="12" fill="#92400e">
+    <tspan font-weight="600">Migration Strategy:</tspan> Maintain API compatibility while upgrading backend infrastructure.
+  </text>
+  <text x="70" y="525" font-family="Inter, sans-serif" font-size="12" fill="#92400e">
+    <tspan font-weight="600">Timeline:</tspan> Incremental migration with zero downtime deployment.
+  </text>
+  
+  <!-- Footer -->
+  <text x="400" y="580" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#6b7280">
+    Built by Lena Nevel • Senior Software Engineer • Product-Minded Development
+  </text>
+</svg>

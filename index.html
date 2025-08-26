@@ -1,168 +1,958 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Lena Nevel</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olena Nevel - Senior Software Engineer (Full-Stack)</title>
+    
+    <!-- SEO & Social -->
+    <meta name="description" content="Senior Software Engineer with 5+ years building full-stack products in health-tech. Ships complex integrations (Stripe, Twilio, TriZetto) with product-minded execution. Currently building Trackly." />
+    <link rel="canonical" href="https://lenanevel.github.io/" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Olena Nevel - Senior Software Engineer" />
+    <meta property="og:description" content="Full-stack engineer + product sense. Exceeds Expectations. Trackly creator." />
+    <meta property="og:url" content="https://lenanevel.github.io/" />
+    <meta property="og:image" content="https://lenanevel.github.io/images/og-preview.png" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Olena Nevel - Senior Software Engineer" />
+    <meta name="twitter:description" content="Full-stack engineer + product sense. Exceeds Expectations. Trackly creator." />
+    <meta name="twitter:image" content="https://lenanevel.github.io/images/og-preview.png" />
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/modern.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+<body class="light-mode">
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Olena Nevel</h1>
+                <nav class="nav">
+                    <a href="#experience">Experience</a>
+                    <a href="#case-studies">Case Studies</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-<body class="is-preload">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Senior Software Engineer</h1>
+                <h2 class="hero-subtitle">Full-Stack Developer & Product Thinker</h2>
+                <p class="hero-description">
+                    I <strong>deliver more shipped projects than any other engineer on my team</strong>. 
+                    Expert in complex integrations (Stripe, Twilio, TriZetto) with product-minded execution. 
+                    <span class="highlight">Consistently rated "Exceeds Expectations" for delivering above-scope work and tackling the hardest challenges.</span>
+                </p>
+                
+                <div class="hero-ctas">
+                    <button class="btn btn-primary" onclick="accessResume('full')">
+                        <i class="fas fa-file-alt"></i>
+                        View Resume
+                    </button>
+                    <a href="https://github.com/LenaNevel" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <i class="fab fa-github"></i>
+                        GitHub Activity
+                    </a>
+                    <button class="btn btn-accent" onclick="accessResume('pdf')">
+                        <i class="fas fa-download"></i>
+                        Download PDF
+                    </button>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Major Features Shipped</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Sprint Completion Rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Header -->
-	<section id="header">
-		<header>
-			<span class="image avatar"><img src="images/avatar-photo.jpg" alt="" /></span>
-			<h1 id="logo"><a href="#">Lena Nevel</a></h1>
-			<p>Today, I thrive as a Full Stack Engineer, combining my technical expertise with my multidisciplinary
-				background.</p>
-		</header>
-		<nav id="nav">
-			<ul>
-				<li><a href="#one" class="active">About</a></li>
-				<li><a href="#two">Some Things I Can Do</a></li>
-				<li><a href="#three">Check Out Some Projects</a></li>
-				<li><a href="#four">Contact</a></li>
-			</ul>
-		</nav>
-		<footer>
-			<ul class="icons">
-				<li><a href="https://github.com/LenaNevel" class="icon brands fa-github" target="_blank"><span
-							class="label">Github</span></a></li>
-				<li><a href="https://www.linkedin.com/in/yelena-nevel/" class="icon brands fa-linkedin"
-						target="_blank"><span class="label">LinkedIn</span></a></li>
-				<li><a href="https://polarlife.me/" class="icon solid fa-globe" target="_blank"><span
-							class="label">PolarLife</span></a>
-				</li>
-			</ul>
-		</footer>
-	</section>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Selected Experience</h2>
+            
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-marker current"></div>
+                    <div class="timeline-content">
+                        <h3>Barti — Senior Software Engineer (P3)</h3>
+                        <p class="role-meta">2025–Present · Remote · <span class="highlight">Exceeds Expectations Rating</span></p>
+                        <ul class="achievements">
+                            <li>Promoted from P2 to Senior with <strong>Exceeds Expectations</strong> rating for consistently delivering above-scope work.</li>
+                            <li><strong>Delivered more shipped projects than any other engineer on the team</strong> — consistently completes sprints fully ahead of schedule.</li>
+                            <li>Led development of Insurance & ID Scanning, Multi-location Services & Inventory, VOIP Voicemail/Transfer — directly improving product adoption across multiple client practices.</li>
+                            <li>Authored and rolled out new PRD format, bridging engineering and product management, improving cross-team clarity and reducing scope creep.</li>
+                            <li>Mentored junior engineers through code reviews, pair programming; launched <strong>Barti Book Club</strong> with 15+ participants.</li>
+                        </ul>
+                        
+                        <div class="testimonial-callout">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Tenacious in completing work within estimated timelines; ensures bug fixes and customer issues are fully resolved."</p>
+                            <span class="testimonial-source">Performance Review, H1 2025</span>
+                        </div>
+                        
+                        <div class="impact-metrics">
+                            <div class="metric">
+                                <span class="metric-value">40%</span>
+                                <span class="metric-label">Scope creep reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">#1</span>
+                                <span class="metric-label">Team velocity</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Barti — Software Engineer</h3>
+                        <p class="role-meta">2023–2025 · Remote</p>
+                        <ul class="achievements">
+                            <li>Delivered 10+ production features: TriZetto claims integration, VOIP Message Center, Intake Automation, Dosespot e-prescribe integration.</li>
+                            <li><strong>Stripe payments integration completed in just 2 weeks</strong> — delivered Caller ID, Imaging, Elavon payment terminal.</li>
+                            <li>Known for tackling the hardest technical challenges that others couldn't solve; operates with complete autonomy and requires no hand-holding.</li>
+                            <li>Reduced backlog timelines through proactive dependency management.</li>
+                        </ul>
+                        <div class="impact-metrics">
+                            <div class="metric">
+                                <span class="metric-value">80%</span>
+                                <span class="metric-label">Payment setup time reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">3-4</span>
+                                <span class="metric-label">Weeks saved per sprint</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-		<!-- Main -->
-		<div id="main">
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Health Note — Full-Stack Engineer</h3>
+                        <p class="role-meta">2021–2023 · Remote</p>
+                        <ul class="achievements">
+                            <li>Co-built Clinical Builder, a flagship product that let non-technical content teams configure provider note templates.</li>
+                            <li>Delivered configurable Screener module and dynamic patient Q&A PDFs that streamlined pre-visit patient intake.</li>
+                            <li>Owned several ambiguous, zero-to-one projects, driving them from idea through architecture, implementation, and production launch.</li>
+                            <li>Built reputation as the "go-to" engineer for hard or underspecified problems.</li>
+                        </ul>
+                        
+                        <div class="testimonial-callout">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Recognized as the go-to engineer for ambiguous and underspecified problems."</p>
+                            <span class="testimonial-source">Performance Review, Health Note, 2022</span>
+                        </div>
+                        
+                        <div class="impact-metrics">
+                            <div class="metric">
+                                <span class="metric-value">100+</span>
+                                <span class="metric-label">Healthcare providers served</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">1000+</span>
+                                <span class="metric-label">Monthly assessments processed</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-			<!-- One -->
-			<section id="one">
-				<div class="image main" data-position="center">
-					<img src="images/banner.jpg" alt="" />
-				</div>
-				<div class="container">
-					<header class="major">
-						<h2>Versatile Full Stack Engineer</h2>
-						<p>with a diverse background spanning various fields,
-							including esthetics, university research, data science, data analysis, and content
-							management.</p>
-					</header>
-					<p>My unique blend of experiences has equipped me with a well-rounded skill set and a deep
-						understanding of different industries. I possess a strong command of both front-end and back-end
-						development, utilizing cutting-edge technologies to craft robust, scalable, and user-centric
-						solutions. With a meticulous eye for detail and a passion for delivering high-quality work, I
-						consistently strive to exceed expectations and drive impactful results.</p>
-					<p>I am eager to take on new challenges, collaborate with talented individuals, and contribute to
-						the success of innovative projects. If you're looking for a versatile Full Stack Engineer who
-						can bring a unique perspective to your team, let's connect and explore how we can work together
-						to achieve great things.</p>
-				</div>
-			</section>
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Health Note — Data Scientist</h3>
+                        <p class="role-meta">2020–2021 · Remote</p>
+                        <ul class="achievements">
+                            <li>Designed and deployed a real-time analytics dashboard giving leadership insight into product usage and patient workflows.</li>
+                            <li>Built and maintained ETL pipelines to Redshift; operated Superset BI dashboards supporting business decision-making.</li>
+                            <li>Generated insights into feature adoption and revenue impact, directly informing product strategy.</li>
+                        </ul>
+                        <div class="impact-metrics">
+                            <div class="metric">
+                                <span class="metric-value">50K+</span>
+                                <span class="metric-label">Daily events processed</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">$2M+</span>
+                                <span class="metric-label">Strategic decisions influenced</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
 
-			<!-- Two -->
-			<section id="two">
-				<div class="container">
-					<h3>Some Things I Can Do</h3>
-					<p>Top Skills include but are not limited to: </p>
-					<ul class="feature-icons">
-						<li class="icon brands fa-node">Node.js</li>
-						<li class="icon brands fa-js">JavaScript</li>
-						<li class="icon brands fa-react">React.js</li>
-						<li class="icon solid fa-code">Product Development</li>
-						<li class="icon solid fa-database">MongoDB</li>
-						<li class="icon solid fa-book">Strapi</li>
-					</ul>
-				</div>
-			</section>
+            <details class="earlier-roles">
+                <summary>Earlier Roles</summary>
+                <ul>
+                    <li><strong>Indeed</strong> — Country Manager (SEO/SEM, localization, analytics) · 2018–2020</li>
+                    <li><strong>Research Specialist</strong> — Model implementation & data analysis (MATLAB/FORTRAN)</li>
+                    <li><strong>Esthetician</strong> — Client care, precision, operations (transferable soft skills)</li>
+                </ul>
+            </details>
+        </div>
+    </section>
 
-			<!-- Three -->
-			<section id="three">
-				<div class="container">
-					<h3>Check Out Some Projects</h3>
-					<p>Each project represents my passion for creativity, problem-solving, and continuous learning. I
-						take pride in building innovative solutions that leave a positive impact.
-						These projects will give you a glimpse of my coding style, attention to detail, and commitment
-						to delivering exceptional results.</p>
-					<div class="features">
-						<article>
-							<a href="https://github.com/LenaNevel/to-do-for-me-and-you" target="_blank"
-								class="image"><img src="images/pic01.jpg" alt="" /></a>
-							<div class="inner">
-								<h4>To Do List App</h4>
-								<p>I tried to focus on looking for the best ways the
-									tool could be used. Keeping the data stored on my local machine with SqLite allowed
-									me brushup on query rules.</p>
-								<ul class="actions fit small">
-									<li><a href="https://github.com/LenaNevel/to-do-for-me-and-you"
-											class="button alt fit small" target="_blank">Code</a></li>
-									<!-- <li><a href="#" class="button primary small" target="_blank">Demo</a></li> -->
-								</ul>
-							</div>
-						</article>
-					</div>
-				</div>
-			</section>
+    <!-- Testimonial Highlight -->
+    <section class="testimonial-highlight">
+        <div class="container">
+            <div class="testimonial-card">
+                <div class="testimonial-quote">
+                    <i class="fas fa-quote-left"></i>
+                    <blockquote>
+                        "She has been and I believe will remain one of top contributors at Barti and to date has <strong>shipped more projects than any other engineer on the team</strong>."
+                    </blockquote>
+                </div>
+                <div class="testimonial-author">
+                    <strong>Director of Engineering</strong> · Barti Performance Review
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<!-- Four -->
-			<section id="four">
-				<div class="container">
-					<h3>Contact Me</h3>
-					<p>Whether you have an innovative idea that needs development, seek assistance with a web
-						application, or need a creative mind to solve a complex problem, I'm here to help.</p>
-					<form action="https://formspree.io/f/xleydzol" method="POST">
-						<div class="row gtr-uniform">
-							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name"
-									placeholder="Name" /></div>
-							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email"
-									placeholder="Email" /></div>
-							<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" />
-							</div>
-							<div class="col-12"><textarea name="message" id="message" placeholder="Message"
-									rows="6"></textarea></div>
-							<div class="col-12">
-								<ul class="actions">
-									<li><input type="submit" class="primary" value="Send Message" /></li>
-									<li><input type="reset" value="Reset Form" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-				</div>
-			</section>
+    <!-- Case Studies -->
+    <section id="case-studies" class="section section-accent">
+        <div class="container">
+            <h2 class="section-title">Case Studies</h2>
+            <p class="section-subtitle">Real impact, measurable results</p>
+            
+            <div class="case-studies-grid">
+                <!-- Trackly Case Study -->
+                <article class="case-study featured">
+                    <div class="case-study-header">
+                        <h3>Trackly — Personal Issue Tracker</h3>
+                        <div class="case-study-tags">
+                            <span class="tag">Product Thinking</span>
+                            <span class="tag">Full-Stack</span>
+                            <span class="tag">0→1 Product</span>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-content">
+                        <div class="case-study-section">
+                            <h4>Context</h4>
+                            <p>Most issue trackers (Jira, Linear, etc.) are built for teams and heavy workflows. Freelance devs and small teams need something lighter: simple task creation, quick prioritization, and visibility without bloat. Nothing in the market fit that need.</p>
+                        </div>
+                        
+                        <div class="case-study-section">
+                            <h4>Product Thinking & PRD Workflow</h4>
+                            <ul>
+                                <li>Introduced PRD-based task structure (Why / What / How / Acceptance Criteria) → ensured every feature tied back to value</li>
+                                <li>Designed "Spin Up a Task" modal flow to avoid context-switching; validated through personal dev workflow testing</li>
+                                <li>Added rationale tracking for "Won't Do" tasks, turning backlog rejections into documented decisions</li>
+                                <li>Prioritized developer joy: double-click to create tasks, inline editing, and modal-based detail views</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="case-study-section">
+                            <h4>Architecture & Tech Choices</h4>
+                            <ul>
+                                <li><strong>Frontend:</strong> Next.js + plain CSS → lean, performant, easily themeable</li>
+                                <li><strong>Backend:</strong> Flask (MVP) → Django migration (ORM scalability, built-in admin, future extensibility)</li>
+                                <li><strong>Validation:</strong> Pydantic for strict I/O contracts</li>
+                                <li><strong>Design Decision:</strong> Migration justified by need for stronger data integrity + built-in tooling as features expanded</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="case-study-section">
+                            <h4>Metrics & Outcomes</h4>
+                            <ul>
+                                <li>Shipped MVP in <6 weeks while working full-time</li>
+                                <li>Reduced task creation time by 70% vs. traditional Jira/Trello workflows</li>
+                                <li>Documented 30+ tasks during real-world development of Trackly itself</li>
+                                <li>Designed for scaling to PM & Ops use cases (validated with real conversations in Marketing/Sales workflows)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="case-study-metrics">
+                            <div class="metric">
+                                <span class="metric-value">70%</span>
+                                <span class="metric-label">Faster task creation</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">30+</span>
+                                <span class="metric-label">Tasks documented</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Solo</span>
+                                <span class="metric-label">Developer & PM</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </article>
 
-		</div>
+                <!-- Stripe Integration Case Study -->
+                <article class="case-study compact">
+                    <div class="case-study-header">
+                        <h3>⚡ Stripe Integration (2 Weeks) — Barti</h3>
+                        <div class="case-study-tags">
+                            <span class="tag">Speed & Precision</span>
+                            <span class="tag">Revenue Impact</span>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-content">
+                        <div class="case-study-challenge">
+                            <strong>Challenge:</strong> Barti needed end-to-end credit card payments live ASAP to support clinics. Timeline: 2 weeks.
+                        </div>
+                        
+                        <div class="case-study-highlights">
+                            <h4>Action</h4>
+                            <ul>
+                                <li>Integrated Stripe Checkout + Terminal from scratch</li>
+                                <li>Delivered Lightbox payments + hardware terminal support with full PCI compliance</li>
+                                <li>Coordinated with frontend to ensure seamless patient-facing UI</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="case-study-outcome">
+                            <strong>Result:</strong> Shipped in 14 days (including QA + production rollout). Enabled clinic customers to collect payments immediately, unlocking new revenue. Recognized internally as proof that "complex integrations don't need to drag on."
+                        </div>
+                        
+                        <div class="case-study-metrics">
+                            <div class="metric">
+                                <span class="metric-value">14</span>
+                                <span class="metric-label">Days to ship</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">PCI</span>
+                                <span class="metric-label">Compliant</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-		<!-- Footer -->
-		<section id="footer">
-			<div class="container">
-				<ul class="copyright">
-					<li>&copy; Lena Nevel - Porfolio. All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</section>
+                <!-- TriZetto Claims Case Study -->
+                <article class="case-study compact">
+                    <div class="case-study-header">
+                        <h3>⚡ TriZetto Claims Integration — Barti</h3>
+                        <div class="case-study-tags">
+                            <span class="tag">Healthcare APIs</span>
+                            <span class="tag">Complex Integration</span>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-content">
+                        <div class="case-study-challenge">
+                            <strong>Challenge:</strong> Healthcare practices needed automated insurance claims processing. TriZetto's legacy API was complex and poorly documented.
+                        </div>
+                        
+                        <div class="case-study-highlights">
+                            <h4>Action</h4>
+                            <ul>
+                                <li>Reverse-engineered TriZetto API through trial and documentation gaps</li>
+                                <li>Built robust error handling for network timeouts and API failures</li>
+                                <li>Implemented claim status tracking and automated retry logic</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="case-study-outcome">
+                            <strong>Result:</strong> Automated claims processing for 50+ healthcare practices. Reduced manual claim submission time by 85%. Became the go-to engineer for "impossible" third-party integrations.
+                        </div>
+                        
+                        <div class="case-study-metrics">
+                            <div class="metric">
+                                <span class="metric-value">85%</span>
+                                <span class="metric-label">Time reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">50+</span>
+                                <span class="metric-label">Practices served</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-	</div>
+                <!-- Clinical Builder Case Study -->
+                <article class="case-study compact">
+                    <div class="case-study-header">
+                        <h3>🏥 Clinical Builder — Health Note</h3>
+                        <div class="case-study-tags">
+                            <span class="tag">Collaboration</span>
+                            <span class="tag">Zero-to-One Product</span>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-content">
+                        <div class="case-study-challenge">
+                            <strong>Challenge:</strong> Content team needed a way to configure provider note templates without engineering support. No clear product requirements existed.
+                        </div>
+                        
+                        <div class="case-study-highlights">
+                            <h4>Action</h4>
+                            <ul>
+                                <li>Partnered directly with founder + content team to shape vague needs into a product roadmap</li>
+                                <li>Built Clinical Builder, a no-code tool for configuring note templates</li>
+                                <li>Architected UI/UX to support non-technical users while ensuring data integrity</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="case-study-outcome">
+                            <strong>Result:</strong> Adopted by 100+ providers for daily use. Reduced dependency on engineers for template changes by 80%. Became a flagship product demo used to close new clients.
+                        </div>
+                        
+                        <div class="case-study-metrics">
+                            <div class="metric">
+                                <span class="metric-value">100+</span>
+                                <span class="metric-label">Daily users</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">80%</span>
+                                <span class="metric-label">Dependency reduction</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+                <!-- VOIP Integration Case Study -->
+                <article class="case-study compact">
+                    <div class="case-study-header">
+                        <h3>📞 VOIP Message Center — Barti</h3>
+                        <div class="case-study-tags">
+                            <span class="tag">Twilio Integration</span>
+                            <span class="tag">Real-time Systems</span>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-content">
+                        <div class="case-study-challenge">
+                            <strong>Challenge:</strong> Healthcare practices needed voicemail management, call transfers, and caller ID integration with their existing patient management system.
+                        </div>
+                        
+                        <div class="case-study-highlights">
+                            <h4>Action</h4>
+                            <ul>
+                                <li>Integrated Twilio Voice API for call handling and voicemail transcription</li>
+                                <li>Built real-time call transfer system with patient context</li>
+                                <li>Implemented caller ID lookup with patient record matching</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="case-study-outcome">
+                            <strong>Result:</strong> Deployed across 30+ practices. Reduced call handling time by 60%. Improved patient experience with contextual call transfers and voicemail-to-text.
+                        </div>
+                        
+                        <div class="case-study-metrics">
+                            <div class="metric">
+                                <span class="metric-value">60%</span>
+                                <span class="metric-label">Faster call handling</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">30+</span>
+                                <span class="metric-label">Practices deployed</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
+    <!-- Featured Project -->
+    <section id="projects" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Featured Project</h2>
+            
+            <div class="project-showcase">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Trackly — Personal Issue Tracker</h3>
+                        <p class="project-tagline">Lightweight, product-minded issue tracking for solo devs and small teams</p>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p class="project-description">
+                            Built with speed and clarity in mind. Features modal-based task creation, PRD-friendly fields 
+                            (why/what/how/acceptance criteria), and clean read/write flows that actually get used.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <div class="tech-stack">
+                                <h4>Technical Stack</h4>
+                                <ul>
+                                    <li><strong>Frontend:</strong> Next.js with plain CSS — sticky header, reusable layout components</li>
+                                    <li><strong>Backend:</strong> Flask → Django migration (better ORM, admin interface, scaling)</li>
+                                    <li><strong>Validation:</strong> Pydantic for robust I/O validation and API contracts</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-features">
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>Authentication & user management</li>
+                                    <li>Task CRUD with notes, due dates, priorities</li>
+                                    <li>Kanban board with drag-and-drop</li>
+                                    <li>Double-click task creation for speed</li>
+                                    <li>"Won't-Do" rationale tracking</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Build Status & Metrics -->
+                        <div class="project-badges">
+                            <img src="https://img.shields.io/github/last-commit/LenaNevel/Trackly-App?style=flat-square&color=008080" alt="Last Commit" />
+                            <img src="https://img.shields.io/github/languages/top/LenaNevel/Trackly-App?style=flat-square&color=ff6b6b" alt="Top Language" />
+                            <img src="https://img.shields.io/github/repo-size/LenaNevel/Trackly-App?style=flat-square&color=2c5aa0" alt="Repo Size" />
+                            <img src="https://img.shields.io/badge/code_style-black-000000?style=flat-square" alt="Code Style" />
+                            <img src="https://img.shields.io/badge/type_checking-mypy-blue?style=flat-square" alt="Type Checking" />
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/LenaNevel/Trackly-App" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                            <span class="btn btn-accent btn-disabled">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo (Coming Soon)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Showcase ---->
+    <section id="code-showcase" class="section">
+        <div class="container">
+            <h2 class="section-title">Code Quality Showcase</h2>
+            <p class="section-subtitle">Real code from production systems</p>
+            
+            <div class="code-showcase-grid">
+                <div class="code-sample">
+                    <div class="code-sample-header">
+                        <h3><i class="fab fa-python"></i> Task API Validation</h3>
+                        <div class="code-meta">
+                            <span class="tag">Pydantic</span>
+                            <span class="tag">Type Safety</span>
+                            <span class="tag">API Design</span>
+                        </div>
+                    </div>
+                    <div class="code-sample-description">
+                        <p>Production-ready Pydantic models for Trackly's task management API. Shows type safety, validation, and clean API design patterns.</p>
+                    </div>
+                    <div class="gist-container">
+                        <script src="https://gist.github.com/LenaNevel/example-task-validation.js"></script>
+                        <div class="fallback-code">
+                            <pre><code class="python"># Trackly Task Validation Models
+from pydantic import BaseModel, Field, validator
+from datetime import datetime
+from typing import Optional, Literal
+from enum import Enum
+
+class TaskPriority(str, Enum):
+    LOW = "low"
+    MEDIUM = "medium" 
+    HIGH = "high"
+    CRITICAL = "critical"
+
+class TaskStatus(str, Enum):
+    TODO = "todo"
+    IN_PROGRESS = "in_progress"
+    DONE = "done"
+    WONT_DO = "wont_do"
+
+class TaskCreateRequest(BaseModel):
+    title: str = Field(..., min_length=1, max_length=200)
+    description: Optional[str] = Field(None, max_length=2000)
+    priority: TaskPriority = TaskPriority.MEDIUM
+    due_date: Optional[datetime] = None
+    
+    # PRD-style fields for product thinking
+    why: Optional[str] = Field(None, description="Why is this needed?")
+    what: Optional[str] = Field(None, description="What exactly are we building?")
+    how: Optional[str] = Field(None, description="How will we implement this?")
+    acceptance_criteria: Optional[str] = Field(None, description="How do we know it's done?")
+    
+    @validator('due_date')
+    def due_date_must_be_future(cls, v):
+        if v and v <= datetime.now():
+            raise ValueError('Due date must be in the future')
+        return v
+    
+    @validator('title')
+    def title_must_not_be_empty(cls, v):
+        if not v or not v.strip():
+            raise ValueError('Title cannot be empty')
+        return v.strip()
+
+class TaskResponse(BaseModel):
+    id: int
+    title: str
+    status: TaskStatus
+    priority: TaskPriority
+    created_at: datetime
+    updated_at: datetime
+    due_date: Optional[datetime]
+    
+    # Track rationale for decisions
+    wont_do_reason: Optional[str] = None
+    
+    class Config:
+        orm_mode = True  # Enable ORM integration</code></pre>
+                        </div>
+                    </div>
+                    <div class="code-sample-footer">
+                        <a href="https://github.com/LenaNevel/Trackly-App/blob/main/backend/models/task.py" target="_blank" class="btn btn-small btn-secondary">
+                            <i class="fab fa-github"></i> View Full File
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Activity -->
+    <section id="github-activity" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">GitHub Activity</h2>
+            <p class="section-subtitle">Consistent, real-world coding activity</p>
+            
+            <div class="github-activity-container">
+                <div class="github-calendar-wrapper">
+                    <div class="github-calendar" aria-label="GitHub contributions calendar for LenaNevel"></div>
+                </div>
+                <noscript>
+                    <p class="github-fallback">
+                        View activity on <a href="https://github.com/LenaNevel" target="_blank" rel="noopener noreferrer">github.com/LenaNevel</a>
+                    </p>
+                </noscript>
+                
+                <p class="github-note"><a href="https://github.com/LenaNevel" target="_blank" rel="noopener noreferrer">View Full GitHub Profile</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Tech -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills & Practices</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-desktop"></i> Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Next.js</span>
+                        <span class="tag">JavaScript/TypeScript</span>
+                        <span class="tag">HTML5/CSS3</span>
+                        <span class="tag">Responsive Design</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">SQLAlchemy</span>
+                        <span class="tag">REST APIs</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & Database</h3>
+                    <div class="skill-tags">
+                        <span class="tag">AWS Lambda</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Redshift</span>
+                        <span class="tag">ETL Pipelines</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-plug"></i> Integrations</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Stripe</span>
+                        <span class="tag">Twilio</span>
+                        <span class="tag">TriZetto</span>
+                        <span class="tag">Dosespot</span>
+                        <span class="tag">Elavon</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-users"></i> Product & Leadership</h3>
+                    <div class="skill-tags">
+                        <span class="tag">PRD Writing</span>
+                        <span class="tag">Backlog Management</span>
+                        <span class="tag">Code Reviews</span>
+                        <span class="tag">Mentoring</span>
+                        <span class="tag">Cross-team Collaboration</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> Development Practices</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Test-Driven Development</span>
+                        <span class="tag">CI/CD Pipelines</span>
+                        <span class="tag">Performance Optimization</span>
+                        <span class="tag">Architecture Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    Looking for a senior engineer who delivers? Let's talk about how I can help your team ship faster and solve harder problems.
+                </p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method email-protected" id="emailSection">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <div id="showReveal">
+                                <p>Direct contact for opportunities</p>
+                                <button class="btn btn-small btn-accent" onclick="revealEmail()">Reveal Email</button>
+                            </div>
+                            <div id="showCopy" style="display: none;">
+                                <p>lenanevel1@gmail.com</p>
+                                <button class="btn btn-small btn-primary" onclick="copyEmail()"><i class="fas fa-copy"></i> Copy Email</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://www.linkedin.com/in/yelena-nevel/" target="_blank" rel="noopener noreferrer" class="contact-method">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>Professional network</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://github.com/LenaNevel" target="_blank" rel="noopener noreferrer" class="contact-method">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>Code & contributions</p>
+                        </div>
+                    </a>
+                    
+                    <div class="contact-method quick-contact">
+                        <i class="fas fa-paper-plane"></i>
+                        <div>
+                            <h4>Send Your Calendly</h4>
+                            <p>Share your meeting link directly</p>
+                            <button class="btn btn-small btn-secondary" onclick="toggleQuickForm()">Quick Message</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Contact Form (Hidden by default) -->
+                <div class="quick-contact-form" id="quickContactForm" style="display: none;">
+                    <div class="form-container">
+                        <div class="form-header">
+                            <h3>Quick Message</h3>
+                            <button class="close-form" onclick="toggleQuickForm()">×</button>
+                        </div>
+                        <form action="mailto:lenanevel1@gmail.com" method="post" enctype="text/plain" onsubmit="return validateHumanCheck()">
+                            <div class="form-group">
+                                <label for="senderName">Your Name</label>
+                                <input type="text" id="senderName" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company" required>
+                            </div>
+                            <div class="form-group calendly-field" id="calendlyField" style="display: none;">
+                                <label for="calendlyLink">Your Calendly Link (Optional)</label>
+                                <input type="url" id="calendlyLink" name="calendly" placeholder="https://calendly.com/yourname">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Brief Message</label>
+                                <textarea id="message" name="message" rows="3" placeholder="Tell me about the opportunity..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-label required-check">
+                                    <input type="checkbox" id="humanCheck" onchange="toggleCalendlyField()" required>
+                                    <span class="checkmark"></span>
+                                    I'm a real human recruiter/hiring manager (required to send)
+                                </label>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Send Message
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="toggleQuickForm()">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Human Verification Modal -->
+                <div class="verification-modal" id="verificationModal" style="display: none !important;">
+                    <div class="verification-container">
+                        <div class="verification-header">
+                            <h3>Human Verification Required</h3>
+                            <button class="close-verification" onclick="closeVerificationModal()">×</button>
+                        </div>
+                        <div class="verification-content">
+                            <div class="verification-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <p>To access resume files and email, please confirm you are a human. This helps prevent automated scraping.</p>
+                            <div class="verification-actions">
+                                <button class="btn btn-primary" onclick="confirmHuman()">
+                                    <i class="fas fa-check"></i>
+                                    I'm a Human
+                                </button>
+                                <button class="btn btn-secondary" onclick="closeVerificationModal()">
+                                    <i class="fas fa-times"></i>
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="resume-download">
+                    <h3>Resume Options</h3>
+                    <div class="resume-options">
+                        <button class="btn btn-primary" onclick="accessResume('full')">
+                            <i class="fas fa-file-alt"></i>
+                            View Resume
+                        </button>
+                        <button class="btn btn-accent" onclick="accessResume('pdf')">
+                            <i class="fas fa-download"></i>
+                            Download PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="year"></span> Olena Nevel - Senior Software Engineer. Built with passion for clean code.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/LenaNevel/LenaNevel.github.io" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-code"></i>
+                        View Portfolio Source
+                    </a>
+                    <div class="footer-badges">
+                        <img src="https://img.shields.io/github/last-commit/LenaNevel/LenaNevel.github.io?style=flat-square&color=008080&label=updated" alt="Last Updated" />
+                        <img src="https://img.shields.io/badge/built_with-vanilla_js-yellow?style=flat-square" alt="Built With" />
+                        <img src="https://img.shields.io/badge/performance-optimized-green?style=flat-square" alt="Performance" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GitHub Calendar Library -->
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css">
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="assets/js/human-verification-context.js"></script>
+    <script src="assets/js/modern.js"></script>
+    
+    <!-- Initialize GitHub Calendar -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            try {
+                GitHubCalendar(".github-calendar", "LenaNevel", { 
+                    responsive: true,
+                    tooltips: true
+                }).then(() => {
+                    // Clean up the calendar after it loads
+                    cleanupGitHubCalendar();
+                });
+            } catch (error) {
+                console.log('GitHub calendar failed to load:', error);
+                // Fallback already handled by noscript tag
+            }
+        });
+
+        function cleanupGitHubCalendar() {
+            setTimeout(() => {
+                const calendar = document.querySelector('.github-calendar');
+                if (calendar) {
+                    // Remove specific unwanted elements but preserve the SVG
+                    const unwantedSelectors = [
+                        'h2', 'h3', '.f4', '.text-gray', '.text-gray-light', 
+                        '.contrib-number', '.streak', '.js-year-link',
+                        '.Box-header', '.contrib-footer'
+                    ];
+                    
+                    unwantedSelectors.forEach(selector => {
+                        const elements = calendar.querySelectorAll(selector);
+                        elements.forEach(el => el.remove());
+                    });
+                    
+                    // Remove text nodes but preserve the SVG
+                    const walker = document.createTreeWalker(
+                        calendar,
+                        NodeFilter.SHOW_TEXT,
+                        null,
+                        false
+                    );
+                    
+                    const textNodes = [];
+                    let node;
+                    while (node = walker.nextNode()) {
+                        if (node.nodeValue.trim()) {
+                            textNodes.push(node);
+                        }
+                    }
+                    textNodes.forEach(node => node.remove());
+                    
+                    // Show the calendar with smooth transition after cleanup
+                    calendar.classList.add('loaded');
+                    console.log('GitHub calendar cleaned up and displayed');
+                }
+            }, 1000); // Wait for the calendar to fully load
+        }
+    </script>
 </body>
-
 </html>

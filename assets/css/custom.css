@@ -1,0 +1,95 @@
+/* Harmonized button styling - matches HTML5 UP "Read Only" theme */
+.cta-row { 
+    margin-top: 0.75rem; 
+    text-align: center;
+}
+
+/* Teal + Coral harmony - professional with personality */
+.button {
+    background: white !important;
+    color: #008080 !important;   /* teal text to match sidebar */
+    border: 2px solid #008080 !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 2px 8px rgba(0, 128, 128, 0.1) !important;
+}
+
+.button:hover {
+    background: #008080 !important;
+    color: white !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 128, 128, 0.2) !important;
+}
+
+/* Alt button (Resume) - coral pop for attention */
+.button.alt {
+    background: #ff6b6b !important;   /* coral accent - warm & eye-catching */
+    color: white !important;
+    border: none !important;
+    font-weight: 600 !important;
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.2) !important;
+}
+
+.button.alt:hover {
+    background: #e65a5a !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3) !important;
+}
+
+/* Resume button positioning */
+#footer p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#footer .button {
+    margin: 0 0.5rem;
+}
+
+/* Experience section styling */
+#experience h3 { 
+    margin-bottom: 0.75rem; 
+}
+
+#experience article { 
+    margin-bottom: 1.25rem; 
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#experience article:last-of-type {
+    border-bottom: none;
+}
+
+#experience h4 {
+    color: #2c5aa0;
+    margin-bottom: 0.5rem;
+}
+
+/* Project card button consistency */
+.features .actions .button { 
+    border-radius: 6px; 
+}
+
+/* Clean minimal header - no clashing stock photo */
+#one {
+    background: #f9fafb; /* subtle light background */
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+#one .container {
+    padding-top: 1rem;
+}
+
+/* Subtle focus states for accessibility */
+.button:focus {
+    outline: 2px solid #2c5aa0;
+    outline-offset: 2px;
+}
+
+.button.alt:focus {
+    outline: 2px solid #238636;
+    outline-offset: 2px;
+}
