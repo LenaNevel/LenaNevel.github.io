@@ -34,7 +34,10 @@
     --color-warning-bg: #fffbeb;        /* Light yellow bg */
     --color-error: #ef4444;             /* Red */
     --color-error-bg: #fef2f2;          /* Light red bg */
-    
+
+    /* Emphasis / marker highlight wash */
+    --color-highlight-bg: rgba(255, 107, 107, 0.15);   /* Soft coral tint */
+
     /* Background Colors */
     --color-bg-primary: #ffffff;        /* Main background */
     --color-bg-secondary: #fafafa;      /* Secondary background */
@@ -106,7 +109,10 @@ body.dark-mode {
     --color-text-primary: #f0f6fc;      /* Light text on dark */
     --color-text-secondary: #8b949e;    /* Secondary text on dark */
     --color-text-muted: #6e7681;        /* Muted text on dark */
-    
+
+    /* Emphasis / marker highlight wash (needs more alpha on dark bg) */
+    --color-highlight-bg: rgba(255, 107, 107, 0.22);
+
     /* Border Colors (Dark) */
     --color-border-light: #30363d;
     --color-border-medium: #21262d;
