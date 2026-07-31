@@ -161,12 +161,16 @@
             font-weight: bold;
         }
         
+        /* Marker-pen emphasis: soft wash behind the full text height,
+           cloned onto each line fragment when the span wraps. */
         .highlight {
-            background: linear-gradient(120deg, #ff6b6b 0%, #ff6b6b 100%);
-            background-repeat: no-repeat;
-            background-size: 100% 0.2em;
-            background-position: 0 88%;
+            background-color: rgba(255, 107, 107, 0.15);
             font-weight: bold;
+            padding: 0.1em 0.2em;
+            margin: 0 -0.05em;
+            border-radius: 3px;
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
         }
         
         /* Skills */
@@ -214,10 +218,10 @@
         /* Print Styles */
         @media print {
             @page {
-                margin: 0.75in;
+                margin: 0.5in;
                 size: letter;
             }
-            
+
             body {
                 max-width: none;
                 margin: 0;
@@ -226,19 +230,44 @@
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
-            
+
+            /* Keep small units intact, but NEVER on .section — a section
+               taller than the remaining space would be pushed to a fresh
+               page whole, leaving the previous page mostly blank. */
+            .metrics-bar,
+            .job,
+            .project,
+            .skill-category {
+                break-inside: avoid;
+            }
+
+            /* Tighten vertical rhythm for print */
+            body {
+                line-height: 1.32;
+            }
+
+            .achievements li {
+                margin-bottom: 1px;
+            }
+
+            .header {
+                padding-bottom: 8px;
+                margin-bottom: 12px;
+            }
+
             .metrics-bar {
-                break-inside: avoid;
+                padding: 8px;
+                margin-bottom: 12px;
             }
-            
-            .job {
-                break-inside: avoid;
-            }
-            
+
             .section {
-                break-inside: avoid;
+                margin-bottom: 12px;
             }
-            
+
+            .job {
+                margin-bottom: 9px;
+            }
+
             /* Hide URL from print footer */
             * {
                 -webkit-print-color-adjust: exact !important;
@@ -262,7 +291,7 @@
 <body>
     <div class="header">
         <div class="name">OLENA NEVEL</div>
-        <div class="title">Senior Software Engineer (P3)</div>
+        <div class="title">Senior Software Engineer</div>
         <div class="contact">
             <a href="mailto:lenanevel1@gmail.com">lenanevel1@gmail.com</a> • 
             <a href="https://linkedin.com/in/yelena-nevel">LinkedIn</a> • 
@@ -274,7 +303,7 @@
     <!-- Key Metrics Bar -->
     <div class="metrics-bar">
         <div class="metric">
-            <span class="metric-value">5+</span>
+            <span class="metric-value">6+</span>
             <span class="metric-label">Years Experience</span>
         </div>
         <div class="metric">
@@ -286,8 +315,8 @@
             <span class="metric-label">Sprint Completion</span>
         </div>
         <div class="metric">
-            <span class="metric-value">10+</span>
-            <span class="metric-label">Features Shipped</span>
+            <span class="metric-value">15+</span>
+            <span class="metric-label">Shipped at Barti</span>
         </div>
         <div class="metric">
             <span class="metric-value">Exceeds</span>
@@ -303,56 +332,34 @@
                 
                 <div class="job">
                     <div class="job-header">
-                        <div class="job-title">Senior Software Engineer (P3)</div>
-                        <div class="job-date">2025–Present</div>
+                        <div class="job-title">Senior Software Engineer</div>
+                        <div class="job-date">2023–Present</div>
                     </div>
                     <div class="company">Barti (Healthcare SaaS) • Remote</div>
                     <ul class="achievements">
-                        <li><span class="highlight">Promoted from P2 with "Exceeds Expectations" rating</span> for consistently delivering above-scope work</li>
+                        <li><span class="highlight">Promoted to Senior with "Exceeds Expectations" rating</span> for consistently delivering above-scope work</li>
                         <li><span class="highlight">Delivers more shipped projects than any other engineer on team</span> — completes sprints ahead of schedule</li>
-                        <li>Led Insurance & ID Scanning, Multi-location Services, VOIP Voicemail/Transfer development</li>
-                        <li>Authored new PRD format improving cross-team clarity and reducing scope creep by 40%</li>
-                    </ul>
-                </div>
-                
-                <div class="job">
-                    <div class="job-header">
-                        <div class="job-title">Software Engineer</div>
-                        <div class="job-date">2023–2025</div>
-                    </div>
-                    <div class="company">Barti (Healthcare SaaS) • Remote</div>
-                    <ul class="achievements">
-                        <li><span class="highlight">Stripe payments integration in 2 weeks</span> — including terminal hardware support</li>
-                        <li>Built TriZetto claims integration, VOIP Message Center, Intake Automation, Dosespot e-prescribe</li>
-                        <li>Known for tackling hardest technical challenges; operates with complete autonomy</li>
-                        <li>Reduced payment setup time by 80%, saved 3-4 weeks per sprint through proactive dependency management</li>
+                        <li>Led <strong>MIPS quality reporting</strong> (CMS measures #141/#226) end-to-end — quality-code logic, claim-time wiring, accepted-insurance validation gating</li>
+                        <li>Owned <strong>Phone Tree</strong> as project lead — authored epic, shipped full backend (call menu, keypress routing, AI-agent precedence, call-group guardrails) on time</li>
+                        <li>Built <strong>original claims system (V1)</strong> end-to-end, then core slice of the <strong>V2</strong> re-architecture — consolidated detail endpoints, submit/manual-finalize flows, CMS-1500 downloads</li>
+                        <li><span class="highlight">Stripe payments integration in 2 weeks</span> — cut payment setup time 80%; plus Insurance &amp; ID Scanning, TriZetto claims, VOIP Message Center, Dosespot e-prescribe</li>
+                        <li>Authored new PRD format and team's canonical Jira-ticket standard — reduced scope creep by 40%</li>
+                        <li>Mentors junior engineers via 1:1s; contributes to sprint planning, cross-team Product coordination, and hiring panels across engineering and product; ran team's first structured hiring loop (Ashby)</li>
                     </ul>
                 </div>
                 
                 <div class="job">
                     <div class="job-header">
                         <div class="job-title">Full-Stack Engineer</div>
-                        <div class="job-date">2021–2023</div>
+                        <div class="job-date">2020–2023</div>
                     </div>
                     <div class="company">Health Note (Healthcare Platform) • Remote</div>
                     <ul class="achievements">
+                        <li>Hired as Data Scientist; transitioned into full-stack engineering while continuing to own the analytics stack</li>
                         <li>Co-built Clinical Builder flagship product enabling non-technical teams to configure provider templates</li>
                         <li>Delivered configurable Screener module processing 1000+ monthly assessments</li>
                         <li><span class="highlight">Recognized as "go-to engineer for ambiguous and underspecified problems"</span></li>
-                        <li>Built reputation for zero-to-one projects from idea through production launch</li>
-                    </ul>
-                </div>
-                
-                <div class="job">
-                    <div class="job-header">
-                        <div class="job-title">Data Scientist</div>
-                        <div class="job-date">2020–2021</div>
-                    </div>
-                    <div class="company">Health Note • Remote</div>
-                    <ul class="achievements">
-                        <li>Built real-time analytics dashboard processing 50K+ daily events</li>
-                        <li>Maintained ETL pipelines to Redshift; operated Superset BI dashboards</li>
-                        <li>Generated insights influencing $2M+ strategic decisions</li>
+                        <li>Built real-time analytics dashboard (50K+ daily events) and ETL pipelines to Redshift; insights influenced $2M+ strategic decisions</li>
                     </ul>
                 </div>
             </div>
@@ -365,7 +372,7 @@
                 <div class="skills-grid">
                     <div class="skill-category">
                         <h4>Languages</h4>
-                        <div class="skill-tags">Python, JavaScript/TypeScript, SQL, HTML5/CSS3</div>
+                        <div class="skill-tags">Python, JavaScript/TypeScript, SQL</div>
                     </div>
                     <div class="skill-category">
                         <h4>Backend</h4>
@@ -376,16 +383,16 @@
                         <div class="skill-tags">React, Next.js, Responsive Design</div>
                     </div>
                     <div class="skill-category">
-                        <h4>Database</h4>
-                        <div class="skill-tags">PostgreSQL, MongoDB, Redshift</div>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Cloud & Tools</h4>
-                        <div class="skill-tags">AWS Lambda, Git, CI/CD Pipelines</div>
+                        <h4>Cloud & Data</h4>
+                        <div class="skill-tags">AWS Lambda, Google Cloud (OAuth, GCS), PostgreSQL, MongoDB, Redshift, CI/CD</div>
                     </div>
                     <div class="skill-category">
                         <h4>Integrations</h4>
-                        <div class="skill-tags">Stripe, Twilio, TriZetto, Dosespot</div>
+                        <div class="skill-tags">Stripe, Twilio, TriZetto, Dosespot, LiveKit, Pocketflows</div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Healthcare Domain</h4>
+                        <div class="skill-tags">Claims (CMS-1500), MIPS quality reporting, e-prescribe, VoIP, revenue cycle</div>
                     </div>
                 </div>
             </div>
@@ -395,24 +402,15 @@
                 <h2 class="section-title">KEY PROJECTS</h2>
                 
                 <div class="project">
-                    <h4>Trackly - Personal Issue Tracker</h4>
-                    <p>Next.js + Django. PRD-style task management. Built MVP while working full-time.</p>
+                    <h4>RowliPurli — <a href="https://rowlipurli.com" style="color: #008080; text-decoration: none;">rowlipurli.com</a></h4>
+                    <p>Live knitting PWA, built solo end-to-end. Next.js 16/React 19, TypeScript, Supabase, Stripe. Offline-capable; ~19K lines, 22 routes.</p>
                 </div>
-                
+
                 <div class="project">
-                    <h4>Stripe Payment Integration</h4>
-                    <p>Full payment processing + hardware terminals. Delivered in 2 weeks including QA.</p>
+                    <h4>untool-mage - Internal Admin Service</h4>
+                    <p>New service built from hackathon seed with no spec. Google OAuth, org CRUD, audit hooks, GCS, CI.</p>
                 </div>
-                
-                <div class="project">
-                    <h4>TriZetto Claims Processing</h4>
-                    <p>Healthcare insurance claims automation. Reduced manual submission by 85%.</p>
-                </div>
-                
-                <div class="project">
-                    <h4>Clinical Builder Platform</h4>
-                    <p>No-code template configuration tool. Adopted by 100+ healthcare providers.</p>
-                </div>
+
             </div>
             
             <!-- Education -->
@@ -422,17 +420,6 @@
                     <strong>BS, Applied Mathematics</strong><br>
                     University of California, San Diego
                 </div>
-            </div>
-            
-            <!-- Recognition -->
-            <div class="section">
-                <h2 class="section-title">RECOGNITION</h2>
-                <ul class="achievements">
-                    <li>"Exceeds Expectations" performance rating (H1 2025)</li>
-                    <li>"Ships more projects than any other engineer on team"</li>
-                    <li>"Go-to engineer for impossible integrations"</li>
-                    <li>Mentors junior engineers, launched Barti Book Club</li>
-                </ul>
             </div>
         </div>
     </div>

@@ -135,7 +135,7 @@ const HumanVerificationContext = (function() {
     function actuallyAccessResume(type) {
         switch(type) {
             case 'full':
-                window.open('resume_content.html', '_blank');
+                window.open('recruiter-resume.html', '_blank');
                 break;
             case 'recruiter':
                 window.open('recruiter-resume.html', '_blank');
