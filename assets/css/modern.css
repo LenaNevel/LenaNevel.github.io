@@ -704,9 +704,11 @@ body.dark-mode .case-study {
     box-shadow: var(--shadow-xl);
 }
 
+/* Featured case studies get a full-width row of their own. Pinning them to
+   a single cell (grid-column: 1; grid-row: 1 / -1) stacks every featured
+   card in the same cell once there is more than one. */
 .case-study.featured {
-    grid-column: 1;
-    grid-row: 1 / -1;
+    grid-column: 1 / -1;
     border: 2px solid var(--primary);
     position: relative;
 }
@@ -1279,6 +1281,11 @@ body.dark-mode .contact-method h4 {
 .contact-method p {
     color: var(--text-muted);
     font-size: var(--font-size-sm);
+}
+
+/* Keep the action button off the address/description text above it */
+.contact-method .btn {
+    margin-top: var(--space-sm);
 }
 
 /* Email CTA Row */
